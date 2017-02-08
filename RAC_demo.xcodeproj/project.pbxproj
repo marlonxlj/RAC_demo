@@ -15,6 +15,10 @@
 		177DEBF31E4AFE0300505915 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177DEBF11E4AFE0300505915 /* LaunchScreen.storyboard */; };
 		177DEBFE1E4AFE0300505915 /* RAC_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 177DEBFD1E4AFE0300505915 /* RAC_demoTests.m */; };
 		177DEC091E4AFE0300505915 /* RAC_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 177DEC081E4AFE0300505915 /* RAC_demoUITests.m */; };
+		177DEC181E4B078400505915 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 177DEC171E4B078400505915 /* Person.m */; };
+		177DEC1B1E4B07C400505915 /* PersonListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 177DEC1A1E4B07C400505915 /* PersonListModel.m */; };
+		177DEC221E4B682900505915 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 177DEC211E4B682900505915 /* UIImage+Extension.m */; };
+		177DEC241E4B6C4200505915 /* houshijing.png in Resources */ = {isa = PBXBuildFile; fileRef = 177DEC231E4B6C4200505915 /* houshijing.png */; };
 		7CA75EFA6B4843CD55A17BBB /* Pods_RAC_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16A5175FFAF73EBD42E90A7 /* Pods_RAC_demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +56,13 @@
 		177DEC041E4AFE0300505915 /* RAC_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAC_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		177DEC081E4AFE0300505915 /* RAC_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAC_demoUITests.m; sourceTree = "<group>"; };
 		177DEC0A1E4AFE0300505915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177DEC161E4B078400505915 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		177DEC171E4B078400505915 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		177DEC191E4B07C400505915 /* PersonListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonListModel.h; sourceTree = "<group>"; };
+		177DEC1A1E4B07C400505915 /* PersonListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonListModel.m; sourceTree = "<group>"; };
+		177DEC201E4B682900505915 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		177DEC211E4B682900505915 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		177DEC231E4B6C4200505915 /* houshijing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = houshijing.png; sourceTree = "<group>"; };
 		1DD44956345B1909310745B2 /* Pods-RAC_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_demo/Pods-RAC_demo.release.xcconfig"; sourceTree = "<group>"; };
 		8A12D58185B442546E3B63E0 /* Pods-RAC_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RAC_demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RAC_demo/Pods-RAC_demo.debug.xcconfig"; sourceTree = "<group>"; };
 		C16A5175FFAF73EBD42E90A7 /* Pods_RAC_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RAC_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +123,13 @@
 				177DEBE71E4AFE0300505915 /* AppDelegate.m */,
 				177DEBE91E4AFE0300505915 /* ViewController.h */,
 				177DEBEA1E4AFE0300505915 /* ViewController.m */,
+				177DEC231E4B6C4200505915 /* houshijing.png */,
+				177DEC161E4B078400505915 /* Person.h */,
+				177DEC171E4B078400505915 /* Person.m */,
+				177DEC191E4B07C400505915 /* PersonListModel.h */,
+				177DEC1A1E4B07C400505915 /* PersonListModel.m */,
+				177DEC201E4B682900505915 /* UIImage+Extension.h */,
+				177DEC211E4B682900505915 /* UIImage+Extension.m */,
 				177DEBEC1E4AFE0300505915 /* Main.storyboard */,
 				177DEBEF1E4AFE0300505915 /* Assets.xcassets */,
 				177DEBF11E4AFE0300505915 /* LaunchScreen.storyboard */,
@@ -234,15 +252,18 @@
 				TargetAttributes = {
 					177DEBDF1E4AFE0300505915 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					177DEBF81E4AFE0300505915 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 177DEBDF1E4AFE0300505915;
 					};
 					177DEC031E4AFE0300505915 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 177DEBDF1E4AFE0300505915;
 					};
@@ -274,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				177DEBF31E4AFE0300505915 /* LaunchScreen.storyboard in Resources */,
+				177DEC241E4B6C4200505915 /* houshijing.png in Resources */,
 				177DEBF01E4AFE0300505915 /* Assets.xcassets in Resources */,
 				177DEBEE1E4AFE0300505915 /* Main.storyboard in Resources */,
 			);
@@ -350,6 +372,9 @@
 			files = (
 				177DEBEB1E4AFE0300505915 /* ViewController.m in Sources */,
 				177DEBE81E4AFE0300505915 /* AppDelegate.m in Sources */,
+				177DEC181E4B078400505915 /* Person.m in Sources */,
+				177DEC221E4B682900505915 /* UIImage+Extension.m in Sources */,
+				177DEC1B1E4B07C400505915 /* PersonListModel.m in Sources */,
 				177DEBE51E4AFE0300505915 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +527,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.001yumama.RAC-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -514,6 +540,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.001yumama.RAC-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -525,6 +552,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.001yumama.RAC-demoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RAC_demo.app/RAC_demo";
 			};
 			name = Debug;
@@ -537,6 +565,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.001yumama.RAC-demoTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RAC_demo.app/RAC_demo";
 			};
 			name = Release;
@@ -548,6 +577,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.001yumama.RAC-demoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = RAC_demo;
 			};
 			name = Debug;
@@ -559,6 +589,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cn.001yumama.RAC-demoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = RAC_demo;
 			};
 			name = Release;
@@ -582,6 +613,7 @@
 				177DEC0F1E4AFE0300505915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		177DEC101E4AFE0300505915 /* Build configuration list for PBXNativeTarget "RAC_demoTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +622,7 @@
 				177DEC121E4AFE0300505915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		177DEC131E4AFE0300505915 /* Build configuration list for PBXNativeTarget "RAC_demoUITests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +631,7 @@
 				177DEC151E4AFE0300505915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
