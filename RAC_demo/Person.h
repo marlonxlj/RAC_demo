@@ -14,4 +14,8 @@
 
 @property (nonatomic, assign) NSInteger age;
 
++ (instancetype)sharedObject ;
+
+- (void)eat;
+
 @end

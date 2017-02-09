@@ -28,7 +28,7 @@
                             
             [_personList addObject:person];
         }
-        NSLog(@"%@",_personList);
+//        NSLog(@"%@",_personList);
     });
 }
 
